@@ -1,0 +1,18 @@
+type Attendees @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  attendeeNo: Int!
+  attendeeFirstName: String!
+  attendeeLastName: String!
+  attendeeContact: String!
+  registrationTimestamp: AWSTimestamp!
+  Games: [Games] @manyToMany(relationName: "AttendeesGames")
+}
+
+type Games @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  gameName: String!
+  gameLocation: String!
+  gameTimestamp: AWSTimestamp!
+  gamePlayersCount: Int!
+  attendeess: [Attendees] @manyToMany(relationName: "AttendeesGames")
+}
