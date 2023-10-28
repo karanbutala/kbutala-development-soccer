@@ -4,7 +4,7 @@ $util.qr($ctx.stash.put("hasAuth", true))
 #if( $util.authType() == "API Key Authorization" )
   #set( $isAuthorized = true )
 #end
-#if( !$isAuthorized && $util.isNull($ctx.stash.authFilter) )
+#if( !$isAuthorized )
 $util.unauthorized()
 #end
 $util.toJson({"version":"2018-05-29","payload":{}})
