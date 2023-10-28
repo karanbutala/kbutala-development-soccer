@@ -1,7 +1,0 @@
-{
-    "AppSyncApiName": "kbutaladevelopmentso",
-    "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": false,
-    "S3DeploymentBucket": "amplify-amplify9539fa64b6654-staging-155202-deployment",
-    "S3DeploymentRootKey": "amplify-appsync-files/f007c579b8fb034f202dd4b443515a3b5f6a5286"
-}
