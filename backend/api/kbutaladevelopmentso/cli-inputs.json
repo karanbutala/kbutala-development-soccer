@@ -1,1 +1,11 @@
-
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "kbutaladevelopmentso",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
